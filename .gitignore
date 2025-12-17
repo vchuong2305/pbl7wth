@@ -1,0 +1,60 @@
+/backend/dataset
+/backend/logs
+/backend/model/old
+/backend/model/test_subset_20_percent.csv
+
+# ------------------------------
+# Backend (Python/FastAPI/ML)
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local databases / files generated at runtime
+*.db
+*.sqlite
+*.sqlite3
+/backend/weather.db
+/backend/app/weather.db
+
+# Generated outputs / temp
+/backend/output/
+/backend/temp/
+
+# Training artifacts (usually not needed for deployment)
+/backend/model/
+/backend/fetch_data/
+
+# Archives
+*.rar
+
+# ------------------------------
+# Frontend (Next.js)
+# ------------------------------
+/weather-forecast/node_modules/
+/weather-forecast/.next/
+/weather-forecast/out/
+/weather-forecast/.turbo/
+/weather-forecast/.vercel/
+
+# Old frontend folder
+/weather-forecast_old/
+
+# Env files (use Railway Variables instead)
+.env
+.env.*
+!.env.example
